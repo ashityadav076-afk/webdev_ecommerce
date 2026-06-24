@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AY Store Ashit Yadav</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:wght@700;900&family=Inter: wghte
+</head>
+<body>
+<nav>
+<div class="nav-logo">AY<span>Store</span></div>
+<ul class="nav-links">
+<li><a href="#categories">Categories</a></li>
+<li><a href="#products">Products</a></li>
+<li><a href="#deals">Deals</a></li>
+<li><a href="#reviews">Reviews</a></li>
+</ul>
+<div class="nav-right">
+<input class="nav-search" type="text" placeholder="Search products...">
+<button class="cart-btn" onclick="toggleCart()">
+■Cart
+<div class="cart-badge" id="cart Badge">0</div>
+</button>
+</div>
+</nav>
+<section class="hero">
+<div>
+<div class="hero-tag"> Monsoon Sale Up to 60% Off</div>
+<h1 class="hero-title">India's Most<br><em>Trusted</em> Store.</h1>
+<p class="hero-desc">From boat earbuds to Bajaj appliances</p>
+<div class="hero-ctas">
+<a href="#products" class="btn-primary">Shop Now →</a>
+<a href="#deals" class="btn-outline">Today's Deals</a>
+</div>
+<div class="hero-stats">
+<div>
+<div class="stat-val">8.4L<span>+</span></div>
+<div class="stat-label">Orders Delivered</div>
+</div>
+<div>
+<div class="stat-val">96<span>%</span></div>
+<div class="stat-label">On-Time Delivery</div>
+</div>
+<div>
+<div class="stat-val">4.8<span>★</span></div>
+<div class="stat-label">Avg Rating</div>
+</div>
+</div>
+</div>
+<div class="hero-visual">
+<div class="hero-card-stack">
+<div class="hcard hcard-back"></div>
+<div class="hcard hcard-front">
+<div class="badge-sale">SALE</div>
+<div class="product-thumb"></div>
+genuine products, verified sellers,
+<div class="product-name-preview">boAt Rockerz 550 Pro</div>
+<div class="product-price-preview"> 1,799 <small style="color: #aaa; text-decoration: line-thro"></small></div>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="categories">
+<div class="section-header">
+<div>
+<h2 class="section-title">Shop by Category</h2>
+<p class="section-sub">Find exactly what you're looking for</p>
+</div>
+<a href="#" class="view-all">View all →</a>
+</div>
+<div class="cats-grid">
+<div class="cat-card cl" onclick="filterProducts('Electronics')">
+<div class="cat-emoji"></div>
+<div class="cat-name">Electronics & Gadgets</div>
+<div class="cat-count">Mobiles, Laptops, Audio, TVs</div>
+</div>
+<div class="cat-card c2" onclick="filter Products('Fashion')">
+<div class="cat-emoji"></div>
+<div class="cat-name">Fashion & Footwear</div>
+<div class="cat-count">Men, Women, Kids, Sports</div>
+</div>
+<div class="cat-card c3" onclick="filterProducts ('Home')">
+<div class="cat-emoji"></div>
+<div class="cat-name">Home & Kitchen</div>
+<div class="cat-count">Appliances, Decor, Cookware</div>
+</div>
+<div class="cat-card c4" onclick="filterProducts('Sports')">
+<div class="cat-emoji"></div>
+<div class="cat-name">Sports & Fitness</div>
+<div class="cat-count">Cricket, Gym, Yoga, Cycling</div>
+</div>
+</div>
+</section>
+<section class="section products-section" id="products">
+<div class="section-header">
+<div>
+<h2 class="section-title">Featured Products</h2>
+<p class="section-sub">Handpicked for you by Ashit Yadav</p>
+</div>
+<a href="#" class="view-all">See all products →</a>
+</div>
+<div class="products-grid" id="productsGrid"></div>
+</section>
+<div class="banner" id="deals">
+<div class="banner-content">
+<div class="banner-eyebrow"> Monsoon Sale Ends Sunday Midnight</div>
+<h2 class="banner-title">Extra <em>10% Off</em><br>on Prepaid Orders</h2>
+<p class="banner-desc">Use code <strong style="color:var(--amber); font-family:var(--font-mono)"></strong></p>
+<a href="#products" class="btn-primary">Shop the Sale →</a>
+</div>
+<div class="banner-emojis"></div>
+</div>
+<div class="features">
+<div class="feat">
+<div class="feat-icon"></div>
+<div>
+<div class="feat-title">Free Delivery above 499</div>
+<div class="feat-desc">Pan-India delivery to 27,000+ pincodes. Express delivery available in Ka</div>
+</div>
+</div>
+<div class="feat">
+<div class="feat-icon"></div>
+<div>
+<div class="feat-title">7-Day Easy Returns</div>
+<div class="feat-desc">Changed your mind? Return within 7 days for a full refund no question</div>
+</div>
+</div>
+<div class="feat">
+<div class="feat-icon"></div>
+<div>
+<div class="feat-title">100% Secure Payments</div>
+<div class="feat-desc">UPI, PhonePe, GPay, Paytm, all major debit/credit cards, and EMI on orde</div>
+</div>
+</div>
+<div class="feat">
+<div class="feat-icon"></div>
+<div>
+<div class="feat-title">Verified Genuine Products</div>
+<div class="feat-desc">Every product is sourced directly from brand-authorised distributors. 1</div>
+</div>
+</div>
+</div>
+<section class="section" id="reviews">
+<div class="section-header">
+<div>
+<h2 class="section-title">What Customers Say</h2>
+<p class="section-sub">Real reviews from real people</p>
+</div>
+</div>
+<div class="testi-grid">
+<div class="testi-card" >
+<div class="testi-stars">★★★★★</div>
+<p class="testi-text">"Ordered the bolt headphones on a Tuesday, they arrived Thursday morning</p>
+<div class="testi-author">
+<div class="testi-avatar tal">R</div>
+<div>
+<div class="testi-name">Rohan Mishra</div>
+<div class="testi-loc">Kanpur, Uttar Pradesh</div>
+</div>
+</div>
+</div>
+<div class="testi-card" >
+<div class="testi-stars">★★★★★</div>
+Verified Buyer</div>
+<p class="testi-text">"I was skeptical about buying a Prestige cooker online but the price her</p>
+<div class="testi-author">
+<div class="testi-avatar ta2">S</div>
+<div>
+<div class="testi-name">Sneha Agarwal</div>
+<div class="testi-loc">New Delhi Verified Buyer</div>
+</div>
+</div>
+</div>
+<div class="testi-card">
+<div class="testi-stars">★★★★</div>
+<p class="testi-text">"Got the Redmi Note 13 Pro during the sale. Phone is amazing, no complain</p>
+<div class="testi-author">
+<div class="testi-avatar ta3">A</div>
+<div>
+<div class="testi-name">Arjun Bhosale</div>
+<div class="testi-loc">Nagpur, Maharashtra Verified Buyer</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section" style="background: white; padding-top:60px; padding-bottom:60px;">
+<div class="section-header">
+<div>
+<h2 class="section-title">Get in Touch</h2>
+<p class="section-sub">Questions about an order? We're here to help.</p>
+</div>
+</div>
+<div style="display:grid; grid-template-columns: repeat(auto-fit,minmax(220px, 1fr)); gap: 1.5rem; margin: 0;">
+<a href="tel:+919389358124" style="text-decoration:none">
+<div style="background: var(--warm-white); border: 1.5px solid var(--gray-light); border-radius:18px;">
+<div style="font-size:1.8rem; background: rgba(245,166,35,0.12); border-radius: 12px; padding: 12px;"></div>
+<div>
+<div style="font-size:0.75rem; color: var(--gray); text-transform:uppercase; letter-spacing:0.1px;"></div>
+<div style="font-weight: 700; color: var(--navy); font-size:1rem">+91 93893 58124</div>
+<div style="font-size: 0.78rem; color:var(--gray); margin-top: 2px">Mon-Sat, 10am-7pm</div>
+</div>
+</div>
+</a>
+<a href="mailto:ashityadav076@gmail.com" style="text-decoration:none">
+<div style="background: var(--warm-white); border: 1.5px solid var(--gray-light); border-radius:18px;">
+<div style="font-size:1.8rem; background: rgba(245,166,35,0.12); border-radius:12px; padding:12px;"></div>
+<div>
+<div style="font-size:0.75rem; color: var(--gray); text-transform:uppercase; letter-spacing:0.1px;"></div>
+<div style="font-weight: 700; color:var(--navy); font-size:0.95rem">ashityadav076@gmail.com</div>
+<div style="font-size:0.78rem; color:var(--gray); margin-top: 2px">Reply within 24 hours</div>
+</div>
+</div>
+</a>
+<div style="background: var(--warm-white); border: 1.5px solid var(--gray-light); border-radius: 18px">
+<div style="font-size:1.8rem; background:rgba(245,166,35,0.12); border-radius: 12px; padding:12px;"></div>
+<div>
+<div style="font-size:0.75rem; color:var(--gray); text-transform:uppercase; letter-spacing: 0.06px;"></div>
+<div style="font-weight: 700; color: var(--navy); font-size:1rem">Shikohabad, UP</div>
+<div style="font-size:0.78rem; color:var(--gray); margin-top: 2px">PIN 283135</div>
+</div>
+</div>
+IIT Kanpur
+<a href="https://wa.me/919389358124" target="_blank" style="text-decoration:none">
+<div style="background: linear-gradient(135deg,#e8fdf0,#d0fbe2); border: 1.5px solid rgba(34,197,94,0.15);">
+<div style="font-size:1.8rem; background:rgba(34,197,94,0.15); border-radius: 12px; padding:12px;"></div>
+<div>
+<div style="font-size:0.75rem; color:var(--gray); text-transform:uppercase; letter-spacing:0.1px;"></div>
+<div style="font-weight:700; color:#15803d; font-size: 1rem">Chat with us</div>
+<div style="font-size: 0.78rem; color:var(--gray); margin-top: 2px">Usually replies in minutes.</div>
+</div>
+</div>
+</a>
+</div>
+</section>
+<div class="newsletter">
+<h2 class="newsletter-title">Get Deal Alerts</h2>
+<p class="newsletter-desc">Subscribe and be the first to know about flash sales, restocks, and exc</p>
+<div class="newsletter-form">
+<input class="newsletter-input" type="email" placeholder="Enter your email address">
+<button class="btn-primary" onclick="subscribeNewsletter()">Notify Me</button>
+</div>
+</div>
+<footer>
+<div class="footer-grid">
+<div class="footer-brand">
+<div class="footer-logo">AY<span>Store</span></div>
+<div class="footer-tagline">AY Store by Ashit Yadav delivering genuine products across India</div>
+<div style="margin-top:16px; font-size:0.85rem; color:rgba(248, 246, 241,0.5); line-height:1.8">
+<div>Shikohabad, Uttar Pradesh 283135</div>
+<div><a href="mailto:ashityadav076@gmail.com" style="color:var(--amber); text-decoration:none">ashityadav076@gmail.com</a></div>
+<div><a href="tel:+919389358124" style="color:var(--amber); text-decoration:none">+91 93893 58124</a></div>
+<div style="margin-top:6px; color: rgba(248,246,241,0.35); font-size:0.78rem">3rd Year Undergrad</div>
+</div>
+<div class="footer-socials">
+<a class="social-btn" href="mailto:ashityadav076@gmail.com" title="Email"></a>
+<a class="social-btn" href="https://wa.me/919389358124" target="_blank" title="WhatsApp"></a>
+<a class="social-btn" href="https://instagram.com" target="_blank" title="Instagram"></a>
+<a class="social-btn" href="https://linkedin.com" target="_blank" title="LinkedIn"></a>
+</div>
+</div>
+<div class="footer-col">
+<h4>Shop</h4>
+<ul>
+<li><a href="#">New Arrivals</a></li>
+<li><a href="#">Best Sellers</a></li>
+<li><a href="#">Electronics</a></li>
+<li><a href="#">Fashion</a></li>
+<li><a href="#">Home & Living</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4>Support</h4>
+<ul>
+<li><a href="#">Track Order</a></li>
+<li><a href="#">Returns</a></li>
+<li><a href="#">FAQs</a></li>
+<li><a href="#">Contact Us</a></li>
+<li><a href="#">Size Guide</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4>Company</h4>
+<ul>
+<li><a href="mailto:ashityadav076@gmail.com">Contact AYStore</a></li>
+<li><a href="#">Careers</a></li>
+<li><a href="#">Press</a></li>
+<li><a href="#">Privacy Policy</a></li>
+<li><a href="#">Terms of Service</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<div class="footer-copy">© 2026 <strong>AY Store by Ashit Yadav</strong> Shikohabad, UP 283135</div>
+<div class="footer-payment">
+<div class="pay-badge">UPI</div>
+<div class="pay-badge">PhonePe</div>
+<div class="pay-badge">GPay</div>
+<div class="pay-badge">Paytm</div>
+<div class="pay-badge">EMI</div>
+<div class="pay-badge">COD</div>
+</div>
+</div>
+</footer>
+<div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+<div class="cart-sidebar" id="cartSidebar">
+<div class="cart-head">
+<div class="cart-title"> Your Cart</div>
+<button class="cart-close" onclick="toggleCart()">X Close</button>
+</div>
+<div class="cart-items" id="cartItems"></div>
+<div class="cart-footer" id="cartFooter" style="display:none">
+<div class="cart-total">
+<span>Total</span>
+<span id="cartTotal">0</span>
+</div>
+<button class="checkout-btn" onclick="checkout()">Proceed to Checkout →→</button>
+</div>
+</div>
+<div class="toast" id="toast">
+<span class="toast-icon"></span>
+<span id="toastMsg">Added to cart!</span>
+</div>
+</body>
+</html>
